@@ -5,21 +5,21 @@ import models.Estudiante;
 public class App {
     public static void main(String[] args) throws Exception {
         //runEjemplosPrimitivos();
-        runEjemplosObjetos();
+        //runEjemplosObjetos();
         runComparaciones();
     }
 
     private static void runComparaciones(){
         Integer [] original = {5, 6, 4, 1, 2, 3};
         Arrays.sort(original);
-        for ( int i = 0; i < original.length; i++){
+        for ( int i = 0; i < original.length; i++)
             System.out.println(original[i] + " - ");
-        }
+        
         System.out.println("------------------------");
         Arrays.sort(original, Comparator.reverseOrder());
-        for ( int i = 0; i < original.length; i++){
+        for ( int i = 0; i < original.length; i++)
             System.out.println(original[i] + " - ");
-        }  
+          
     }
     
     private static void runEjemplosObjetos(){
@@ -80,7 +80,8 @@ public class App {
         System.out.println(title);
         for (int i = 0; i < arr.length; i++){
            System.out.print(arr[i] + " - ");
-        System.out.println(); 
         }
+           System.out.println(); 
+        
     }
 }   
